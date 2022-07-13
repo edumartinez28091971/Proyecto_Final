@@ -1,0 +1,23 @@
+Entidades 
+
+Usuarios
+Deportistas
+Categorias
+Noticias
+
+--------------------------
+
+Relaciones
+
+Categorias - Noticias
+
+
+---------------------------
+
+Usuarios: idUsuario,nick,clave,foto,tipoUsuario(normal,admin)
+
+Deportistas: idDeportista,foto,nombre,apellido,sexo,fechaNacimiento 
+
+Categorias: idCategoria,titulo
+
+Noticias: idNoticia,idCategoria,titulo,cuerpo,fechaPublicacion 
