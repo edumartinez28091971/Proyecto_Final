@@ -28,7 +28,7 @@ Primary Key (idDeportista)
 --
 </panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>480</x><y>240</y><w>280</w><h>190</h></coordinates><panel_attributes>Noticias
 --
-*idNoticia:int(5) AutoIncrement
+*idNoticia:int(10) AutoIncrement
 *idCategoria:int(5)
 *titulo:Varchar(50)
 *cuerpo:Text
