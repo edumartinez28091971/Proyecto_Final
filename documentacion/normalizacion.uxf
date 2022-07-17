@@ -1,39 +1,39 @@
-<diagram program="umletino" version="15.0.0"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>0</x><y>10</y><w>210</w><h>170</h></coordinates><panel_attributes>Usuarios
+<diagram program="umletino" version="15.0.0"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>20</x><y>10</y><w>260</w><h>170</h></coordinates><panel_attributes>Usuarios
 --
-*idUsuario:int(5) AutoIncrement
-*nick:Varchar(50)
-*clave:Varchar(50)
-*tipoUsuario:ENUM(admin,normal)
-*imagen;imagen
+*idUsuario:int(5) NotNull AutoIncrement
+*nick:Varchar(50) NotNull
+*clave:Varchar(50) NotNull
+*tipoUsuario:ENUM(admin,normal) NotNull
+*imagen;imagen NotNull
 
 --
 Primary Key (idUsuario)
---</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>480</x><y>10</y><w>210</w><h>170</h></coordinates><panel_attributes>Categorias
+--</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>580</x><y>10</y><w>260</w><h>170</h></coordinates><panel_attributes>Categorias
 --
-*idCategoria:int(5) AutoIncrement
-*titulo:Varchar(50)
+*idCategoria:int(5) NotNull AutoIncrement
+*titulo:Varchar(50) NotNull
 --
 Primary Key (idCategoria)
 --
-</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>240</x><y>10</y><w>210</w><h>170</h></coordinates><panel_attributes>Deportistas
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>300</x><y>10</y><w>260</w><h>170</h></coordinates><panel_attributes>Deportistas
 --
-*idDeportista:int(5) AutoIncrement
-*nombre:varchar(50)
-*apellido:Varchar(50)
-*foto:imagen
-*fechaNacimiento:DATE
+*idDeportista:int(5) NotNull AutoIncrement
+*nombre:varchar(50) NotNull
+*apellido:Varchar(50) NotNull
+*foto:imagen NotNull
+*fechaNacimiento:DATE NotNull
 
 --
 Primary Key (idDeportista)
 --
-</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>480</x><y>240</y><w>280</w><h>190</h></coordinates><panel_attributes>Noticias
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>560</x><y>240</y><w>280</w><h>190</h></coordinates><panel_attributes>Noticias
 --
-*idNoticia:int(10) AutoIncrement
-*idCategoria:int(5)
-*titulo:Varchar(50)
-*cuerpo:Text
-*fechaPublicacion:DATE
+*idNoticia:int(10) NotNull AutoIncrement
+*idCategoria:int(5) NotNull
+*titulo:Varchar(50) NotNull
+*cuerpo:Text NotNull
+*fechaPublicacion:DATE NotNull
 --
 Primary Key (idNoticia)
 --
-ForenKey idCategoria-&gt; idCategoria(Categoria)</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>560</x><y>170</y><w>110</w><h>90</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;70;90;10</additional_attributes></element></diagram>
+ForenKey idCategoria-&gt; idCategoria(Categoria)</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>640</x><y>170</y><w>130</w><h>90</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;70;110;10</additional_attributes></element></diagram>
