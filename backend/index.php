@@ -1,6 +1,5 @@
 <?php
 
-
 // echo("Estoy iniciando mi proyecto");
 // PHPINFO();
 
@@ -31,8 +30,16 @@
       flex: 1 0 auto;
     }
 
+    */ El siguiente codigo cambia el color de la tabla */ 
+    
     table.striped>tbody>tr:nth-child(odd) {
-      background-color:#b3e5fc ;
+      background-color: #87CDEE;
+    }
+
+    */ El siguiente codigo cambia el color del tooltip */
+    
+    .material-tooltip {
+  background-color: #181BA8;
     }
   </style>
 </head>
@@ -42,10 +49,18 @@
     <div class="nav-wrapper blue z-depth-3  ">
       <a href="#" class="brand-logo center"><i class="Large material-icons">blur_on</i>Panel - Admin</a>
       <ul id="nav-mobile" class="right hide-on-med-and-down ">
-        <li><a href="Deportistas.html">Deportistas</a></li>
-        <li><a href="Categorias.html">Categorias</a></li>
-        <li><a href="Noticias.html">Noticias</a></li>
-        <li><a href="Usuarios.html">Usuarios</a></li>
+        <li>
+          <a href="index.php?r=deportistas">Deportistas</a>
+        </li>
+        <li>
+          <a href="index.php?r=categorias">Categorias</a>
+        </li>
+        <li>
+          <a href="index.php?r=noticias">Noticias</a>
+        </li>
+        <li>
+          <a href="index.php?r=usuarios">Usuarios</a>
+        </li>
       </ul>
     </div>
   </nav>
@@ -55,59 +70,13 @@
   <main>
     <div class="container">
 
-      <h1>Hola soy el container</h1>
 
-      <!-- Defino mi tabla -->
-
-      <table class="striped">
-        <thead>
-          <tr>
-            <th>Nombre</th>
-            <th>Item Nombre</th>
-            <th>Item Precio</th>
-            <th>Botones</th>
-          </tr>
-        </thead>
-
-        <tbody>
-          <tr>
-            <td>Alvin</td>
-            <td>Eclair</td>
-            <td>$0.87</td>
-          </tr>
-          <tr>
-            <td>Alan</td>
-            <td>Jellybean</td>
-            <td>$3.76</td>
-          </tr>
-          <tr>
-            <td>Jonathan</td>
-            <td>Lollipop</td>
-            <td>$7.00</td>
-          </tr>
-          <tr>
-            <td>Adam</td>
-            <td>Quest</td>
-            <td>$8.00</td>
-          </tr>
-          <tr>
-            <td>Daniel</td>
-            <td>Rodriguez</td>
-            <td>$6.00</td>
-          </tr>
-        </tbody>
-      </table>
-
-
-
-
-
-    </div>
+<?php include("router.php");  ?>
+    
+</div>
   </main>
 
-
   <!--Defino mi Footer -->
-
 
   <footer class="page-footer blue">
     <div class="footer-copyright">
@@ -118,14 +87,14 @@
     </div>
   </footer>
 
-
-
-
   <!--JavaScript at end of body for optimized loading-->
   <script type="text/javascript" src="web/js/materialize.min.js"></script>
-
+  <!--JavaScript para activar modal-->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      M.AutoInit();
+    });
+  </script>
 </body>
-
-
 
 </html>
