@@ -1,8 +1,8 @@
 <diagram program="umletino" version="15.0.0"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>20</x><y>10</y><w>260</w><h>170</h></coordinates><panel_attributes>Usuarios
 --
 *idUsuario:int(5) NotNull AutoIncrement
-*nick:Varchar(50) NotNull
-*clave:Varchar(50) NotNull
+*nick:Varchar(20) NotNull
+*clave:Varchar(20) NotNull
 *tipoUsuario:ENUM(admin,normal) NotNull
 *imagen;imagen NotNull
 

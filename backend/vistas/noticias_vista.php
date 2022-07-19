@@ -1,19 +1,14 @@
+
 <h1 class="col 6 center"><span class="blue-text text-darken-2 center">Noticias</span></h1>
 
 <!-- Defino el boton ingreso  -->
-
-<div>
-  <a class="waves-effect waves-light btn modal-trigger z-depth-3 blue right" href="#modal1">
-    <i class="material-icons left">group_add
-    </i>Ingreso</a>
-</div>
 
 <!-- Modal  -->
 
 <div id="modal1" class="modal modal-fixed-footer">
   <div class="modal-content">
     <h4> <i class="material-icons left">group_add
-      </i> <span class="blue-text text-darken-2">Ingreso</span></h4>
+      </i> <span class="blue-text text-darken-2">Ingreso Noticias</span></h4>
     <div class="row">
       <form class="col s12">
         <div class="row">
@@ -26,12 +21,7 @@
             <label for="last_name">Last Name</label>
           </div>
         </div>
-        <div class="row">
-          <div class="input-field col s12">
-            <input disabled value="I am not editable" id="disabled" type="text" class="validate">
-            <label for="disabled">Disabled</label>
-          </div>
-        </div>
+        
         <div class="row">
           <div class="input-field col s12">
             <input id="password" type="password" class="validate">
@@ -58,7 +48,9 @@
     </div>
   </div>
   <div class="modal-footer">
-    <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+  <a href="#!" class="modal-close waves-effect waves-green btn z-depth-3 blue">
+      Aceptar
+    </a>
   </div>
 </div>
 
@@ -67,10 +59,12 @@
 <table class="striped">
   <thead>
     <tr>
-      <th class="center">Nombre</th>
-      <th class="center">Item Nombre</th>
-      <th class="center">Item Precio</th>
-      <th class="right">Botones</th>
+      <th class="center blue-text"><h5>Titulo</h5></th>
+      <th class="center blue-text"><h5>Cuerpo</h5></th>
+      <th class="center blue-text"><h5>Fecha Publicacion</h5></th>
+      <th> <a class="waves-effect waves-light btn modal-trigger z-depth-3 blue right" href="#modal1">
+    <i class="material-icons left">group_add
+    </i>Ingreso</a></th>
     </tr>
   </thead>
 

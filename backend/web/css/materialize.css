@@ -2985,7 +2985,7 @@ table.striped tr {
 }
 
 table.striped > tbody > tr:nth-child(odd) {
-  background-color: rgba(242, 242, 242, 0.5);
+  background-color: #87CDEE;
 }
 
 table.striped > tbody > tr > td {
@@ -5147,7 +5147,7 @@ small {
   top: 0;
   pointer-events: none;
   visibility: hidden;
-  background-color: #323232;
+  background-color: #181BA8;;
 }
 
 .backdrop {

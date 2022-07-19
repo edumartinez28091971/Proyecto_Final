@@ -13,6 +13,9 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <!--Import materialize.css-->
   <link type="text/css" rel="stylesheet" href="web/css/materialize.css" media="screen,projection" />
+  <!--uso micss-->
+  <link type="text/css" rel="stylesheet" href="web/css/micss.css" media="screen,projection" />
+
 
   <!--Let browser know website is optimized for mobile-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -30,17 +33,7 @@
       flex: 1 0 auto;
     }
 
-    */ El siguiente codigo cambia el color de la tabla */ 
     
-    table.striped>tbody>tr:nth-child(odd) {
-      background-color: #87CDEE;
-    }
-
-    */ El siguiente codigo cambia el color del tooltip */
-    
-    .material-tooltip {
-  background-color: #181BA8;
-    }
   </style>
 </head>
 
@@ -93,6 +86,7 @@
   <script>
     document.addEventListener('DOMContentLoaded', function() {
       M.AutoInit();
+      
     });
   </script>
 </body>
